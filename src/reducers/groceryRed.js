@@ -1,34 +1,26 @@
-import { v4 as uuid } from 'uuid';
+const initialState = [
+	{ id: 1, name: 'Strawberry' },
+	{ id: 2, name: 'Blueberry' },
+	{ id: 3, name: 'Orange' },
+	{ id: 4, name: 'Banana' },
+	{ id: 5, name: 'Apple' },
+	{ id: 6, name: 'Carrot' },
+	{ id: 7, name: 'Celery' },
+	{ id: 8, name: 'Mushroom' },
+	{ id: 9, name: 'Green Pepper' },
+	{ id: 10, name: 'Eggs' },
+	{ id: 11, name: 'Cheese' },
+	{ id: 12, name: 'Butter' },
+	{ id: 13, name: 'Chicken' },
+	{ id: 14, name: 'Beef' },
+	{ id: 15, name: 'Pork' },
+	{ id: 16, name: 'Fish' },
+	{ id: 17, name: 'Rice' },
+	{ id: 18, name: 'Pasta' },
+	{ id: 19, name: 'Bread' }
+];
 
-const initialState = {
-	items: [
-		{ id: uuid(), name: 'Strawberry' },
-		{ id: uuid(), name: 'Blueberry' },
-		{ id: uuid(), name: 'Orange' },
-		{ id: uuid(), name: 'Banana' },
-		{ id: uuid(), name: 'Apple' },
-
-		{ id: uuid(), name: 'Carrot' },
-		{ id: uuid(), name: 'Celery' },
-		{ id: uuid(), name: 'Mushroom' },
-		{ id: uuid(), name: 'Green Pepper' },
-
-		{ id: uuid(), name: 'Eggs' },
-		{ id: uuid(), name: 'Cheese' },
-		{ id: uuid(), name: 'Butter' },
-
-		{ id: uuid(), name: 'Chicken', categoryId: 4 },
-		{ id: uuid(), name: 'Beef', categoryId: 4 },
-		{ id: uuid(), name: 'Pork', categoryId: 4 },
-		{ id: uuid(), name: 'Fish', categoryId: 4 },
-
-		{ id: uuid(), name: 'Rice' },
-		{ id: uuid(), name: 'Pasta' },
-		{ id: uuid(), name: 'Bread' }
-	]
-};
-
-const groceryRed = (state = initialState.items, action) => {
+const groceryRed = (state = initialState, action) => {
 	return state;
 };
 

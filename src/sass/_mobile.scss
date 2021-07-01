@@ -1,0 +1,11 @@
+@media only screen and (max-width: 720px) {
+	.item-lists {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.item-list {
+			width: 90%;
+		}
+	}
+}

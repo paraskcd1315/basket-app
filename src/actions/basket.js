@@ -6,3 +6,10 @@ export const addItemToBasket = (id, name) => (dispatch) => {
 		payload: { id, name }
 	});
 };
+
+export const removeItemFromBasket = (id) => (dispatch) => {
+	dispatch({
+		type: REMOVE_BASKETITEM,
+		payload: { id }
+	});
+};

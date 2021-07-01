@@ -2,6 +2,7 @@ import React from 'react';
 import './sass/style.scss';
 import Header from './components/layout/Header';
 import GroceryList from './components/Lists/GroceryList';
+import BasketList from './components/Lists/BasketList';
 
 //Redux
 import { Provider } from 'react-redux';
@@ -12,7 +13,10 @@ const App = () => {
 		<Provider store={store}>
 			<>
 				<Header />
-				<GroceryList />
+				<div className='item-lists'>
+					<BasketList />
+					<GroceryList />
+				</div>
 			</>
 		</Provider>
 	);

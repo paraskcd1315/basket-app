@@ -7,9 +7,15 @@ function basketRed(state = initialState, action) {
 
 	switch (type) {
 		case ADD_BASKETITEM:
-			return [...state, payload];
+			if (!(state.filter((item) => item.id === payload.id).length > 0)) {
+				return [...state, payload];
+			} else {
+				return state;
+			}
+
 		case REMOVE_BASKETITEM:
-			return state.filter((item) => item.id !== payload);
+			return state.filter((item) => item.id !== payload.id);
+
 		default:
 			return state;
 	}
