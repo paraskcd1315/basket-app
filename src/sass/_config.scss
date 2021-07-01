@@ -1,0 +1,26 @@
+$success-color: #42ba96;
+$danger-color: #df4759;
+$light-color: #dde3e9;
+$dark-color: #242628;
+
+@function set-text-color($bg-color) {
+	@if (lightness($bg-color) > 60) {
+		@return $dark-color;
+	} @else {
+		@return $light-color;
+	}
+}
+
+@function set-transparency($color, $opacity) {
+	@return rgba($color, $opacity);
+}
+
+@mixin set-size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin set-background-color($bg-color) {
+	background-color: $bg-color;
+	color: set-text-color($bg-color);
+}
