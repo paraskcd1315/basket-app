@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addItemToBasket } from '../../actions/basket';
 
-const GroceryList = ({ groceryRed, basketRed, addItemToBasket }) => {
+const GroceryList = ({ groceryRed, addItemToBasket }) => {
 	return (
 		<div className='item-list grocery-items'>
 			<div className='item-lists-title'>
